@@ -147,27 +147,6 @@ export default function App() {
         <Row className="g-4">
           <Col lg={5} className="space-y-4">
             <StudentForm onAddStudent={handleAddStudent} />
-
-            <Card className="border border-neutral-300 rounded-lg shadow-sm bg-white p-3 text-xs space-y-2">
-              <div className="flex justify-between items-center text-neutral-500 border-b border-neutral-200 pb-1.5">
-                <span className="uppercase font-bold tracking-wider">System Information</span>
-                <Badge bg="dark" className="font-mono text-[10px]">LEAFLET_v1.9</Badge>
-              </div>
-              <div className="text-neutral-600 space-y-1">
-                <div className="flex justify-between">
-                  <span>Geocoding Engine:</span>
-                  <span className="font-bold text-neutral-800">OpenStreetMap Nominatim</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Mapping Library:</span>
-                  <span className="font-bold text-neutral-800">React Leaflet</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Components & UI:</span>
-                  <span className="font-bold text-neutral-800">React Bootstrap + Tailwind</span>
-                </div>
-              </div>
-            </Card>
           </Col>
 
           <Col lg={7}>
