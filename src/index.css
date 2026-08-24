@@ -3,13 +3,59 @@
 @import "leaflet/dist/leaflet.css";
 
 body, button, input, select, textarea, .form-control, .form-select, .btn, .table, .card, .badge, .alert {
-  font-family: 'Courier Prime', 'Space Mono', 'Courier New', monospace !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
+h1, h2, h3, h4, h5, h6, .heading-font {
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif !important;
+}
+
+/* Ensure equal height flex cards */
+.equal-height-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Leaflet Map clean container */
 .leaflet-container {
   width: 100%;
   height: 100%;
-  min-height: 420px;
-  border-radius: 0.5rem;
+  min-height: 440px;
+  border-radius: 0.75rem;
   z-index: 1;
+}
+
+/* Custom modern popup */
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.06) !important;
+  border: 1px solid #e2e8f0 !important;
+  padding: 4px !important;
+}
+
+.leaflet-popup-tip {
+  box-shadow: none !important;
+  border-top-color: #ffffff !important;
+}
+
+/* Clean up Bootstrap table borders */
+.table > :not(caption) > * > * {
+  border-bottom-color: #f1f5f9;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
